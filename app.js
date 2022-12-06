@@ -20,7 +20,7 @@ const connection = mysql.createConnection({
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/Client/index.html"));
+  res.sendFile(path.join(__dirname, "/index.html"));
 });
 
 app.post("/register", function (req, res) {
@@ -34,7 +34,6 @@ app.post("/register", function (req, res) {
       if (err) throw err;
       // res.send("Thanks for joining us!");
       // res.redirect("/");
-      log;
     }
   );
 });
